@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hwang Jaewook | Portfolio</title>
+    <title>Hwang Jae | Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -18,7 +18,6 @@
             -webkit-box-orient: vertical;  
             overflow: hidden;
         }
-        .eng-sub { font-size: 0.85em; opacity: 0.7; font-weight: 500; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
@@ -26,29 +25,14 @@
     <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <div class="flex flex-col">
-                <h1 class="text-xl font-bold tracking-tighter text-indigo-600 uppercase">Hwang Jaewook.</h1>
-                <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Digital Architect</span>
+            <h1 class="text-xl font-bold tracking-tighter text-indigo-600 uppercase tracking-widest">Hwang Jae.</h1>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">Contact</a>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-bold text-slate-600">
-                <a href="#about" class="hover:text-indigo-600 transition-colors flex flex-col items-center">
-                    <span>소개</span>
-                    <span class="text-[10px] uppercase opacity-50">About</span>
-                </a>
-                <a href="#skills" class="hover:text-indigo-600 transition-colors flex flex-col items-center">
-                    <span>기술</span>
-                    <span class="text-[10px] uppercase opacity-50">Skills</span>
-                </a>
-                <a href="#projects" class="hover:text-indigo-600 transition-colors flex flex-col items-center">
-                    <span>프로젝트</span>
-                    <span class="text-[10px] uppercase opacity-50">Projects</span>
-                </a>
-                <a href="#contact" class="hover:text-indigo-600 transition-colors flex flex-col items-center">
-                    <span>연락처</span>
-                    <span class="text-[10px] uppercase opacity-50">Contact</span>
-                </a>
-            </div>
-            <a href="https://github.com/Hwang-Jae" target="_blank" title="Visit GitHub Profile" class="p-2 bg-slate-100 rounded-full hover:bg-slate-200 transition-all">
+            <a href="https://github.com/Hwang-Jae" target="_blank" class="p-2 bg-slate-100 rounded-full hover:bg-slate-200 transition-all">
                 <i data-lucide="github" class="w-5 h-5"></i>
             </a>
         </div>
@@ -63,28 +47,21 @@
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                     </span>
-                    <span>Available for New Projects / 새로운 프로젝트 가능</span>
+                    <span>Available for New Projects</span>
                 </div>
                 <h2 class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight">
                     Crafting Digital <br />
                     <span class="text-indigo-600">Experiences.</span>
                 </h2>
-                <div class="space-y-4">
-                    <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
-                        안녕하세요, <strong>황재욱</strong>입니다. 기획의 정교함과 개발의 기술력을 결합하여 사용자에게 최상의 가치를 전달하는 제품을 만듭니다.
-                    </p>
-                    <p class="text-sm text-slate-400 leading-relaxed max-w-lg font-medium italic">
-                        Hello, I am <strong>Hwang Jaewook</strong>. I build products that deliver ultimate value to users by combining meticulous planning with technical development expertise.
-                    </p>
-                </div>
+                <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+                    안녕하세요, <strong>황재우</strong>입니다. 기획의 정교함과 개발의 기술력을 결합하여 사용자에게 최상의 가치를 전달하는 제품을 만듭니다.
+                </p>
                 <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#contact" class="px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 text-center flex flex-col">
-                        <span>Contact Me</span>
-                        <span class="text-[10px] opacity-70">연락하기</span>
+                    <a href="#contact" class="px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 text-center">
+                        Contact Me
                     </a>
-                    <a href="#projects" class="px-8 py-4 bg-white border border-slate-200 rounded-xl font-bold hover:border-indigo-300 hover:text-indigo-600 transition-all text-center flex flex-col">
-                        <span>View Work</span>
-                        <span class="text-[10px] opacity-70">프로젝트 보기</span>
+                    <a href="#projects" class="px-8 py-4 bg-white border border-slate-200 rounded-xl font-bold hover:border-indigo-300 hover:text-indigo-600 transition-all text-center">
+                        View Work
                     </a>
                 </div>
             </div>
@@ -102,8 +79,7 @@
     <section id="skills" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col items-center text-center mb-16">
-                <h3 class="text-3xl font-bold mb-1">Technical Proficiency</h3>
-                <p class="text-sm text-slate-400 font-bold mb-4 uppercase tracking-widest">보유 기술 및 전문성</p>
+                <h3 class="text-3xl font-bold mb-4">Technical Proficiency</h3>
                 <div class="w-16 h-1 bg-indigo-600 rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
@@ -112,8 +88,7 @@
                     <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                         <i data-lucide="layout" class="text-indigo-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold">Frontend</h4>
-                    <p class="text-[10px] text-slate-400 mb-6 font-bold uppercase tracking-tighter">프론트엔드 개발</p>
+                    <h4 class="text-xl font-bold mb-6">Frontend</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">React</span>
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">Vue.js</span>
@@ -126,8 +101,7 @@
                     <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                         <i data-lucide="terminal" class="text-indigo-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold">Backend</h4>
-                    <p class="text-[10px] text-slate-400 mb-6 font-bold uppercase tracking-tighter">백엔드 개발</p>
+                    <h4 class="text-xl font-bold mb-6">Backend</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">Node.js</span>
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">Python</span>
@@ -140,8 +114,7 @@
                     <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                         <i data-lucide="briefcase" class="text-indigo-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold">Planning & Design</h4>
-                    <p class="text-[10px] text-slate-400 mb-6 font-bold uppercase tracking-tighter">기획 및 디자인</p>
+                    <h4 class="text-xl font-bold mb-6">Planning & Design</h4>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">Figma</span>
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">UX Strategy</span>
@@ -157,24 +130,14 @@
     <section id="projects" class="py-24 bg-slate-900 text-white px-6">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-                <div class="space-y-2">
-                    <h3 class="text-4xl font-bold tracking-tight">Project Repositories</h3>
-                    <p class="text-slate-400 text-lg">GitHub의 공개 저장소와 배포된 프로젝트 리스트입니다.</p>
-                    <p class="text-xs text-indigo-400 font-bold uppercase tracking-widest italic opacity-80">List of public repositories and deployed projects from GitHub.</p>
+                <div class="space-y-4">
+                    <h3 class="text-4xl font-bold">Project Repositories</h3>
+                    <p class="text-slate-400 text-lg">GitHub의 공개 저장소와 배포된 HTML 페이지입니다.</p>
                 </div>
                 <div class="flex bg-slate-800 p-1.5 rounded-xl border border-slate-700" id="filter-tabs">
-                    <button data-filter="all" class="filter-btn px-6 py-2.5 rounded-lg text-sm font-bold transition-all tab-active flex flex-col items-center">
-                        <span>전체</span>
-                        <span class="text-[9px] uppercase opacity-60">All</span>
-                    </button>
-                    <button data-filter="development" class="filter-btn px-6 py-2.5 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white flex flex-col items-center">
-                        <span>개발</span>
-                        <span class="text-[9px] uppercase opacity-60">Dev</span>
-                    </button>
-                    <button data-filter="planning" class="filter-btn px-6 py-2.5 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white flex flex-col items-center">
-                        <span>기획</span>
-                        <span class="text-[9px] uppercase opacity-60">Plan</span>
-                    </button>
+                    <button data-filter="all" class="filter-btn px-6 py-2.5 rounded-lg text-sm font-bold transition-all tab-active">전체</button>
+                    <button data-filter="development" class="filter-btn px-6 py-2.5 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white">개발</button>
+                    <button data-filter="planning" class="filter-btn px-6 py-2.5 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white">기획</button>
                 </div>
             </div>
 
@@ -183,7 +146,7 @@
                 <!-- Loading State -->
                 <div class="col-span-full flex flex-col items-center justify-center py-40 space-y-4">
                     <i data-lucide="loader-2" class="w-12 h-12 animate-spin text-indigo-500"></i>
-                    <p class="text-slate-400 animate-pulse font-bold tracking-widest uppercase text-xs">Loading Projects / 데이터를 불러오는 중...</p>
+                    <p class="text-slate-400 animate-pulse">GitHub 프로젝트를 불러오는 중...</p>
                 </div>
             </div>
         </div>
@@ -198,41 +161,28 @@
                         Let's Build Something <br />
                         <span class="text-indigo-600 underline decoration-indigo-200 underline-offset-8">Amazing</span> Together.
                     </h3>
-                    <div class="space-y-4">
-                        <p class="text-slate-500 text-lg leading-relaxed max-w-md">
-                            새로운 도전은 언제나 환영입니다. 제 프로젝트가 흥미로우셨거나 협업을 원하신다면 언제든 메시지를 남겨주세요.
-                        </p>
-                        <p class="text-sm text-slate-400 leading-relaxed max-w-md font-medium italic">
-                            New challenges are always welcome. If you found my projects interesting or are looking for collaboration, please feel free to leave a message.
-                        </p>
-                    </div>
+                    <p class="text-slate-500 text-lg leading-relaxed max-w-md">
+                        새로운 도전은 언제나 환영입니다. 제 프로젝트가 흥미로우셨거나 협업을 원하신다면 언제든 메시지를 남겨주세요.
+                    </p>
                     <div class="grid sm:grid-cols-2 gap-6">
                         <a href="mailto:hwodnr0073@gmail.com" class="flex items-center space-x-4 p-5 bg-slate-50 rounded-2xl hover:bg-indigo-600 hover:text-white transition-all group">
                             <i data-lucide="mail" class="text-indigo-600 group-hover:text-white"></i>
-                            <div class="flex flex-col">
-                                <span class="font-bold text-sm">hwodnr0073@gmail.com</span>
-                                <span class="text-[9px] uppercase opacity-50 font-bold tracking-widest">Email Me / 메일 보내기</span>
-                            </div>
+                            <span class="font-bold text-sm">hwodnr0073@gmail.com</span>
                         </a>
                         <a href="https://www.linkedin.com/in/Jaewok-Hwang-0355b1307" target="_blank" class="flex items-center space-x-4 p-5 bg-slate-50 rounded-2xl hover:bg-blue-600 hover:text-white transition-all group">
                             <i data-lucide="linkedin" class="text-blue-600 group-hover:text-white"></i>
-                            <div class="flex flex-col">
-                                <span class="font-bold text-sm">LinkedIn Profile</span>
-                                <span class="text-[9px] uppercase opacity-50 font-bold tracking-widest">Connect / 링크드인 연결</span>
-                            </div>
+                            <span class="font-bold text-sm">LinkedIn Profile</span>
                         </a>
                     </div>
                 </div>
                 <div class="w-full lg:w-96 p-8 bg-indigo-600 rounded-[2rem] text-white shadow-2xl shadow-indigo-200">
-                    <h4 class="text-xl font-bold">Quick Connect</h4>
-                    <p class="text-[10px] uppercase font-bold tracking-widest opacity-70 mb-6">간편 메시지 보내기</p>
+                    <h4 class="text-xl font-bold mb-6">Quick Connect</h4>
                     <form class="space-y-4" onsubmit="event.preventDefault();">
-                        <input type="text" placeholder="Name / 이름" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 placeholder:text-white/60 focus:bg-white/20 transition-all outline-none">
-                        <input type="email" placeholder="Email / 이메일" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 placeholder:text-white/60 focus:bg-white/20 transition-all outline-none">
-                        <textarea placeholder="Message / 내용" rows="4" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 placeholder:text-white/60 focus:bg-white/20 transition-all outline-none resize-none"></textarea>
-                        <button type="button" class="w-full py-4 bg-white text-indigo-600 font-black rounded-xl hover:bg-slate-100 transition-all transform active:scale-95 shadow-lg flex flex-col items-center justify-center">
-                            <span>SEND MESSAGE</span>
-                            <span class="text-[9px] opacity-70">메시지 전송</span>
+                        <input type="text" placeholder="Your Name" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 placeholder:text-white/60 focus:bg-white/20 transition-all outline-none">
+                        <input type="email" placeholder="Your Email" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 placeholder:text-white/60 focus:bg-white/20 transition-all outline-none">
+                        <textarea placeholder="Tell me about your project..." rows="4" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 placeholder:text-white/60 focus:bg-white/20 transition-all outline-none resize-none"></textarea>
+                        <button type="button" class="w-full py-4 bg-white text-indigo-600 font-black rounded-xl hover:bg-slate-100 transition-all transform active:scale-95 shadow-lg">
+                            SEND MESSAGE
                         </button>
                     </form>
                 </div>
@@ -244,15 +194,12 @@
     <footer class="py-16 text-center text-slate-400 bg-white border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex justify-center space-x-6 mb-8">
-                <a href="https://github.com/Hwang-Jae" target="_blank" title="GitHub" class="hover:text-indigo-600 transition-colors"><i data-lucide="github"></i></a>
-                <a href="https://www.linkedin.com/in/Jaewok-Hwang-0355b1307" target="_blank" title="LinkedIn" class="hover:text-indigo-600 transition-colors"><i data-lucide="linkedin"></i></a>
-                <a href="mailto:hwodnr0073@gmail.com" title="Email" class="hover:text-indigo-600 transition-colors"><i data-lucide="mail"></i></a>
+                <a href="https://github.com/Hwang-Jae" target="_blank" class="hover:text-indigo-600 transition-colors"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/Jaewok-Hwang-0355b1307" target="_blank" class="hover:text-indigo-600 transition-colors"><i data-lucide="linkedin"></i></a>
+                <a href="mailto:hwodnr0073@gmail.com" class="hover:text-indigo-600 transition-colors"><i data-lucide="mail"></i></a>
             </div>
-            <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
-                © 2024 Hwang Jaewook. All Rights Reserved.
-            </p>
-            <p class="text-[9px] font-bold uppercase tracking-widest text-slate-300 mt-1">
-                Engineered with Passion / 열정으로 구축되었습니다.
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-300">
+                © 2024 Hwang Jae. All Rights Reserved. Engineered with Passion.
             </p>
         </div>
     </footer>
@@ -262,15 +209,13 @@
         const githubUsername = "Hwang-Jae";
         let allProjects = [];
 
-        // Planning projects (Bilingual data)
+        // Planning projects (Manual data)
         const planningProjects = [
             {
                 id: "p1",
                 title: "이커머스 UX 개선 기획",
-                engTitle: "E-Commerce UX Improvement Planning",
                 category: "planning",
                 description: "기존 쇼핑몰의 결제 프로세스를 분석하여 이탈률을 15% 감소시킨 UX 리뉴얼 프로젝트입니다.",
-                engDescription: "A UX renewal project that analyzed the checkout process of an existing mall, reducing bounce rates by 15%.",
                 tech: ["Figma", "User Research", "Prototyping"],
                 image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop",
                 link: "https://www.figma.com/",
@@ -282,10 +227,10 @@
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                nav.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+                nav.classList.add('bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-3');
                 nav.classList.remove('bg-transparent', 'py-5');
             } else {
-                nav.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+                nav.classList.remove('bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-3');
                 nav.classList.add('bg-transparent', 'py-5');
             }
         });
@@ -303,10 +248,8 @@
                     .map(repo => ({
                         id: repo.id,
                         title: repo.name,
-                        engTitle: repo.name.replace(/-/g, ' '),
                         category: "development",
                         description: repo.description || "설명이 없는 프로젝트입니다.",
-                        engDescription: repo.description || "No project description available.",
                         tech: [repo.language].filter(Boolean),
                         image: `https://opengraph.githubassets.com/1/${githubUsername}/${repo.name}`,
                         link: repo.homepage,
@@ -320,8 +263,7 @@
                 container.innerHTML = `
                     <div class="col-span-full text-center py-40">
                         <p class="text-red-400 font-medium">${err.message}</p>
-                        <p class="text-xs text-slate-500 mt-2 uppercase font-bold tracking-widest italic">Failed to load GitHub data. / 데이터를 불러오는데 실패했습니다.</p>
-                        <button onclick="fetchGitHubRepos()" class="mt-4 text-indigo-400 underline underline-offset-4">다시 시도 / Retry</button>
+                        <button onclick="fetchGitHubRepos()" class="mt-4 text-indigo-400 underline underline-offset-4">다시 시도</button>
                     </div>
                 `;
             }
@@ -345,46 +287,36 @@
                                     <span>${project.stars}</span>
                                 </div>
                             ` : ''}
-                            <div class="bg-indigo-600 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-tighter shadow-lg">
-                                ${project.category === 'development' ? 'Dev / 개발' : 'Plan / 기획'}
+                            <div class="bg-indigo-600 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-tighter">
+                                ${project.category === 'development' ? 'Dev' : 'Plan'}
                             </div>
                         </div>
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-4">
-                            <div class="flex flex-col">
-                                <h4 class="text-xl font-bold group-hover:text-indigo-400 transition-colors line-clamp-1 capitalize">
-                                    ${project.title.replace(/-/g, ' ')}
-                                </h4>
-                                ${project.engTitle && project.engTitle !== project.title ? `
-                                    <span class="text-[10px] text-slate-500 font-bold uppercase tracking-widest truncate max-w-[150px]">${project.engTitle}</span>
-                                ` : ''}
-                            </div>
+                            <h4 class="text-xl font-bold group-hover:text-indigo-400 transition-colors line-clamp-1 capitalize">
+                                ${project.title.replace(/-/g, ' ')}
+                            </h4>
                             <div class="flex space-x-3 text-slate-400">
-                                ${project.github ? `<a href="${project.github}" target="_blank" title="GitHub Code" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>` : ''}
+                                ${project.github ? `<a href="${project.github}" target="_blank" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>` : ''}
                             </div>
                         </div>
-                        <div class="mb-8 flex-grow">
-                            <p class="text-slate-300 text-sm line-clamp-2 leading-relaxed mb-2">
-                                ${project.description}
-                            </p>
-                            <p class="text-slate-500 text-[11px] line-clamp-2 leading-relaxed italic">
-                                ${project.engDescription}
-                            </p>
-                        </div>
+                        <p class="text-slate-400 text-sm mb-8 line-clamp-3 leading-relaxed flex-grow">
+                            ${project.description}
+                        </p>
                         <div class="flex flex-col space-y-4">
                             <div class="flex flex-wrap gap-2">
                                 ${project.tech.map(t => `<span class="text-[10px] font-bold text-indigo-300 bg-indigo-500/10 border border-indigo-500/20 px-2 py-1 rounded-md uppercase">${t}</span>`).join('')}
                             </div>
                             ${project.link ? `
-                                <a href="${project.link}" target="_blank" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-sm font-bold flex flex-col items-center justify-center transition-all shadow-lg shadow-indigo-500/20">
+                                <a href="${project.link}" target="_blank" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-sm font-bold flex items-center justify-center space-x-2 transition-all">
+                                    <i data-lucide="globe" class="w-4 h-4"></i>
                                     <span>Live Demo</span>
-                                    <span class="text-[9px] opacity-70">실행 페이지 보기</span>
                                 </a>
                             ` : `
-                                <a href="${project.github}" target="_blank" class="w-full py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-xl text-sm font-bold flex flex-col items-center justify-center transition-all">
-                                    <span>View Repository</span>
-                                    <span class="text-[9px] opacity-70">소스 코드 보기</span>
+                                <a href="${project.github}" target="_blank" class="w-full py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-xl text-sm font-bold flex items-center justify-center space-x-2 transition-all">
+                                    <i data-lucide="github" class="w-4 h-4"></i>
+                                    <span>View Repo</span>
                                 </a>
                             `}
                         </div>
