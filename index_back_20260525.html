@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hwang Jaewook | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -21,6 +23,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
 
+    <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
             <div class="flex flex-col">
@@ -51,6 +54,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="pt-40 pb-24 px-6 relative overflow-hidden">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
             <div class="space-y-8">
@@ -94,6 +98,7 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col items-center text-center mb-16">
@@ -102,6 +107,7 @@
                 <div class="w-16 h-1 bg-indigo-600 rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
+                <!-- Frontend -->
                 <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-indigo-200 transition-all group">
                     <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                         <i data-lucide="layout" class="text-indigo-600"></i>
@@ -115,6 +121,7 @@
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">TypeScript</span>
                     </div>
                 </div>
+                <!-- Backend -->
                 <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-indigo-200 transition-all group">
                     <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                         <i data-lucide="terminal" class="text-indigo-600"></i>
@@ -128,6 +135,7 @@
                         <span class="px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium">MongoDB</span>
                     </div>
                 </div>
+                <!-- Planning -->
                 <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-indigo-200 transition-all group">
                     <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                         <i data-lucide="briefcase" class="text-indigo-600"></i>
@@ -145,6 +153,7 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="py-24 bg-slate-900 text-white px-6">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
@@ -169,7 +178,9 @@
                 </div>
             </div>
 
+            <!-- Project Grid -->
             <div id="project-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Loading State -->
                 <div class="col-span-full flex flex-col items-center justify-center py-40 space-y-4">
                     <i data-lucide="loader-2" class="w-12 h-12 animate-spin text-indigo-500"></i>
                     <p class="text-slate-400 animate-pulse font-bold tracking-widest uppercase text-xs">Loading Projects / 데이터를 불러오는 중...</p>
@@ -178,6 +189,7 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-24 px-6 bg-slate-50">
         <div class="max-w-6xl mx-auto">
             <div class="bg-white rounded-[3rem] p-8 md:p-20 shadow-2xl shadow-indigo-100/50 border border-slate-100 flex flex-col lg:flex-row gap-16 items-center">
@@ -228,6 +240,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="py-16 text-center text-slate-400 bg-white border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex justify-center space-x-6 mb-8">
@@ -274,33 +287,19 @@
 
                 const repos = data
                     .filter(repo => !repo.fork)
-                    .map(repo => {
-                        // 1. 레포지토리에 기본 설정된 homepage가 있는지 확인
-                        let projectLink = repo.homepage;
-
-                        // 2. 만약 homepage가 없고, GitHub Pages 배포(has_pages)가 true라면 규칙에 맞게 URL 자동 생성
-                        if (!projectLink && repo.has_pages) {
-                            if (repo.name.toLowerCase() === `${githubUsername.toLowerCase()}.github.io`) {
-                                projectLink = `https://${githubUsername}.github.io/`;
-                            } else {
-                                projectLink = `https://${githubUsername}.github.io/${repo.name}/`;
-                            }
-                        }
-
-                        return {
-                            id: repo.id,
-                            title: repo.name,
-                            engTitle: repo.name.replace(/-/g, ' '),
-                            category: "development",
-                            description: repo.description || "설명이 없는 프로젝트입니다.",
-                            engDescription: repo.description || "No project description available.",
-                            tech: [repo.language].filter(Boolean),
-                            image: `https://opengraph.githubassets.com/1/${githubUsername}/${repo.name}`,
-                            link: projectLink, // 자동 생성 혹은 등록된 배포 주소
-                            github: repo.html_url,
-                            stars: repo.stargazers_count
-                        };
-                    });
+                    .map(repo => ({
+                        id: repo.id,
+                        title: repo.name,
+                        engTitle: repo.name.replace(/-/g, ' '),
+                        category: "development",
+                        description: repo.description || "설명이 없는 프로젝트입니다.",
+                        engDescription: repo.description || "No project description available.",
+                        tech: [repo.language].filter(Boolean),
+                        image: `https://opengraph.githubassets.com/1/${githubUsername}/${repo.name}`,
+                        link: repo.homepage,
+                        github: repo.html_url,
+                        stars: repo.stargazers_count
+                    }));
 
                 allProjects = [...repos, ...planningProjects];
                 renderProjects('all');
